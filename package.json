@@ -1,0 +1,21 @@
+{
+  "name": "cyano-bact",
+  "displayName": "CyanoBact",
+  "description": "Cyano Bact Theme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cyano Bact Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Cyano Bact Theme-color-theme.json"
+      }
+    ]
+  }
+}
