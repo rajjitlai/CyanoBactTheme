@@ -19,6 +19,7 @@
 		"merge.incomingHeaderBackground": "#003cff6b",
 		"terminalCursor.foreground": "#9dff00",
 		"terminal.foreground": "#00ff6a",
+		"terminal.background": "#00000031",
 		"debugToolBar.background": "#002212ec",
 		"debugToolBar.border": "#00ff6a",
 		"editorLink.activeForeground": "#3d81fe",
@@ -64,11 +65,10 @@
 		"editor.findMatchHighlightBackground": "#283593",
 		"editor.wordHighlightBackground": "#42557B",
 		"editor.wordHighlightStrongBackground": "#42557B",
-		"editorGroup.background": "#1B2738",
 		"editorGroup.border": "#1E2C3F",
 		"editorGroupHeader.tabsBackground": "#372963",
-		"editorIndentGuide.activeBackground": "#00ffc8",
-		"editorIndentGuide.background": "#1E1E44",
+		"editorIndentGuide.activeBackground1": "#00ffc8",
+		"editorIndentGuide.background1": "#1E1E44",
 		"editorLineNumber.foreground": "#3D5AFE",
 		"editorLineNumber.activeForeground": "#00ffc8",
 		"editorWhitespace.foreground": "#2B3E5A",
@@ -160,7 +160,6 @@
 		{
 			"settings": {
 				"foreground": "#eeffffff",
-				"background": "#263238ff"
 			}
 		},
 		{
@@ -294,7 +293,7 @@
 			}
 		},
 		{
-			"name": "String, Symbols, Inherited Class, Markup Heading",
+			"name": "String, Symbols, Inherited Class, Markup Heading, Keyword",
 			"scope": [
 				"string",
 				"constant.other.symbol",
@@ -302,10 +301,11 @@
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"keyword"
 			],
 			"settings": {
-				"fontStyle": "normal",
+				"fontStyle": "italic",
 				"foreground": "#76c1ff"
 			}
 		},
@@ -315,7 +315,7 @@
 				"entity.name",
 				"support.type",
 				"support.class",
-				"support.orther.namespace.use.php",
+				"support.other.namespace.use.php",
 				"meta.use.php",
 				"support.other.namespace.php",
 				"markup.changed.git_gutter",
@@ -619,7 +619,7 @@
 				"text.html.markdown meta.dummy.line-break"
 			],
 			"settings": {
-				"foreground": ""
+				"foreground": "#38ff42"
 			}
 		},
 		{
@@ -685,8 +685,8 @@
 				"markup.strike"
 			],
 			"settings": {
-				"fontStyle": "strike",
-				"foreground": ""
+				"fontStyle": "underline",
+				"foreground": "#00fdea"
 			}
 		},
 		{
@@ -695,7 +695,6 @@
 				"markup.quote punctuation.definition.blockquote.markdown"
 			],
 			"settings": {
-				"background": "#65737E",
 				"foreground": "#65737E"
 			}
 		},
@@ -706,7 +705,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": ""
+				"foreground": "#00fdea"
 			}
 		},
 		{
@@ -790,7 +789,6 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"background": "#00000050",
 				"foreground": "#65737E"
 			}
 		},
