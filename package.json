@@ -3,6 +3,11 @@
   "displayName": "CyanoBact",
   "description": "Cyano Bact Theme",
   "version": "0.0.1",
+  "publisher": "rjins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rajjitlai/CyanoBactTheme"
+  },
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -17,5 +22,10 @@
         "path": "./themes/Cyano Bact Theme-color-theme.json"
       }
     ]
-  }
+  },
+  "keywords": [
+    "theme",
+    "themes",
+    "dark theme"
+  ]
 }
