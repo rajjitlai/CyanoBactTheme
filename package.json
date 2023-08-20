@@ -4,7 +4,7 @@
   "description": "Cyano Bact Theme",
   "version": "0.1.1",
   "publisher": "rjins",
-  "icon": "images/icon.png",
+  "icon": "icons/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/rajjitlai/CyanoBactTheme"
