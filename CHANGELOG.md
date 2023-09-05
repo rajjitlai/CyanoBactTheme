@@ -2,6 +2,11 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
 
+## [2.0.0]
+
+- Changes in the color and the active editor background
+- Some changes in the button effect
+
 ## [1.0.0]
 
 - Added the Main color or Cyan to all the Editor related settings.
