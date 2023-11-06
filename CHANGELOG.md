@@ -2,6 +2,13 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
 
+## [2.1.0]
+
+- Some bugs and fixes
+- The transparency of the Terminal will work with Vibrancy.
+- If you want to see the effect, install Vibrancy and use it with our theme.
+- Some changes in the color
+
 ## [2.0.0]
 
 - Changes in the color and the active editor background
