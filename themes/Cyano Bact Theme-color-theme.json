@@ -53,7 +53,7 @@
 		"badge.foreground": "#001107",
 		"activityBar.border": "#09040f",
 		"editor.background": "#080915",
-		"editor.foreground": "#00FF9C",
+		"editor.foreground": "#7dfbff",
 		"editorError.foreground": "#ff1865",
 		"editorRuler.foreground": "#182333",
 		"editor.lineHighlightBackground": "#006eff2d",
@@ -619,7 +619,7 @@
 				"text.html.markdown meta.dummy.line-break"
 			],
 			"settings": {
-				"foreground": "#38ff42"
+				"foreground": "#fff"
 			}
 		},
 		{
