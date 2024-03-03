@@ -4,6 +4,11 @@
 
 Thank you for choosing our "Cyan Bact Theme" extension for your Visual Studio Code editor. This theme is designed to bring a refreshing and stylish cyan-themed experience to your coding environment. Here's everything you need to know to make the most out of this extension:
 
+## Preview
+- Just a preview of the theme, code is not required
+
+![Cyan Bact Theme](./images/preview.png)
+
 ### Features
 
 - **Cyan-inspired**: Immerse yourself in a calming and energizing cyan color palette that makes coding a pleasure.
