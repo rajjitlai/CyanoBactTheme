@@ -41,4 +41,12 @@ If you enjoy using the Cyan Bact Theme, we'd appreciate it if you could help us 
 
 Thank you for choosing "Cyan Bact Theme" to enhance your coding experience. We hope you enjoy the vibrant colors and elegant design that our theme brings to your workspace.
 
+## 💰You can help me by Donating
+
+<div align="center">
+  <a href="https://www.paypal.com/paypalme/rajjitlaishram" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=PayPal&logo=paypal&label=&color=00457C&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="paypal logo"  />
+  </a>
+</div>
+
 Happy Coding! 🎉
