@@ -2,11 +2,7 @@
   "name": "cyano-bact",
   "displayName": "CyanoBact",
   "description": "Cyano Bact Theme",
-<<<<<<< HEAD
-  "version": "2.0.1",
-=======
   "version": "2.1.0",
->>>>>>> c2f4b53f0a8fb4e04b959f371dd4f6a3a98d9878
   "publisher": "rjins",
   "icon": "icons/icon.png",
   "repository": {
