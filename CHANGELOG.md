@@ -2,6 +2,12 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
 
+## [2.1.3]
+
+- We have changed the default coloring to a more darker color in order to improve code readability.
+- Removed the transparency effect from the terminal
+- We have removed support where you used to able to install the Vibrancy extension. It was removed as it was not supporting.
+
 ## [2.1.2]
 
 - Changes restored to previous versions, adding a little transparency and dark effect to the background
