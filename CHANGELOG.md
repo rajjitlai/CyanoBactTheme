@@ -2,6 +2,16 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
 
+## [2.1.2]
+
+- Changes restored to previous versions, adding a little transparency and dark effect to the background
+- Minor bug fixes added
+
+## [2.1.1]
+
+- Changes made to some coloring of the Editor Background
+- Minor bug fixes
+
 ## [2.1.0]
 
 - Some bugs and fixes
