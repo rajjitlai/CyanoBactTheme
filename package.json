@@ -2,8 +2,9 @@
   "name": "cyano-bact",
   "displayName": "CyanoBact",
   "description": "Cyano Bact Theme",
-  "version": "2.1.3",
-  "publisher": "rjins",
+  "version": "2.2.0",
+  "publisher": "rajjit-laishram",
+  "author": "Rajjit Laishram",
   "icon": "icons/icon.png",
   "repository": {
     "type": "git",

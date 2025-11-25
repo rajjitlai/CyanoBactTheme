@@ -2,6 +2,17 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
 
+## [2.2.0]
+
+- Added comprehensive terminal ANSI color support for better terminal experience
+- Added terminal background and selection colors
+- Added bracket pair colorization support with 6 color levels
+- Added minimap styling for better code navigation
+- Added editor inlay hints styling for TypeScript and other languages
+- Added editor info and hint foreground colors
+- Updated publisher to "rajjit-laishram" and added author field
+- Improved overall theme consistency and modern VS Code feature support
+
 ## [2.1.3]
 
 - We have changed the default coloring to a more darker color in order to improve code readability.
