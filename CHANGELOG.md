@@ -10,7 +10,6 @@ All notable changes to the "cyano-bact" extension will be documented in this fil
 - Added minimap styling for better code navigation
 - Added editor inlay hints styling for TypeScript and other languages
 - Added editor info and hint foreground colors
-- Updated publisher to "rajjit-laishram" and added author field
 - Improved overall theme consistency and modern VS Code feature support
 
 ## [2.1.3]
