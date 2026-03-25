@@ -1,6 +1,16 @@
 # Change Log
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
+ 
+## [3.0.0] - The Dynamic Update!
+ 
+- **Interactive Theme Builder**: A professional, tabbed workshop to customize your VS Code theme in real-time.
+- **Dynamic Presets**: Switched between curated styles like Cyano, Emerald, Sunset, Nordic, and Light modes.
+- **Advanced Customization**: Granular control over Gutter, Selection, and Line Number colors.
+- **Transparency Feature**: Added an opacity slider for professional alpha-channel workbench effects.
+- **Theme Library**: Save, load, and manage your custom creations locally.
+- **One-Click Export**: Export your designs as standard VS Code JSON theme files.
+- **Premium UI Overhaul**: Modern glassmorphism-inspired dashboard for a superior builder experience.
 
 ## [2.2.0]
 

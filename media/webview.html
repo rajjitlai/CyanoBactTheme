@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyanoBact Theme Builder</title>
+    <link rel="stylesheet" href="${styleUri}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CyanoBact <span>Builder</span></h1>
+        </header>
+
+        <main>
+            <section class="sidebar-pnl card">
+                <nav class="tabs">
+                    <button class="tab-btn active" data-tab="styles">Styles</button>
+                    <button class="tab-btn" data-tab="customize">Customize</button>
+                    <button class="tab-btn" data-tab="export">Export</button>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <a href="https://cyanobact.rjsblog.in/" class="site-link">Website</a>
+                </div>
+
+                <div class="tab-content active" id="tab-styles">
+                    <div class="section">
+                        <h3>Presets</h3>
+                        <div class="presets-grid">
+                            <button class="preset-card" data-preset="cyano" title="Cyano Prime">
+                                <div class="card-preview" style="background: #0b0d17;"><span style="background: #55eefd;"></span></div>
+                                <span>Cyano</span>
+                            </button>
+                            <button class="preset-card" data-preset="emerald" title="Emerald Deep">
+                                <div class="card-preview" style="background: #061109;"><span style="background: #2ecc71;"></span></div>
+                                <span>Emerald</span>
+                            </button>
+                            <button class="preset-card" data-preset="sunset" title="Neon Sunset">
+                                <div class="card-preview" style="background: #1a0b17;"><span style="background: #ff00ff;"></span></div>
+                                <span>Sunset</span>
+                            </button>
+                            <button class="preset-card" data-preset="nordic" title="Nordic Ice">
+                                <div class="card-preview" style="background: #1b2b34;"><span style="background: #88c0d0;"></span></div>
+                                <span>Nordic</span>
+                            </button>
+                            <button class="preset-card" data-preset="light-cyan" title="Light Cyan">
+                                <div class="card-preview" style="background: #f0faff;"><span style="background: #008cff;"></span></div>
+                                <span>Light</span>
+                            </button>
+                            <button class="preset-card" data-preset="sand" title="Soft Sand">
+                                <div class="card-preview" style="background: #faf7f2;"><span style="background: #9b6d43;"></span></div>
+                                <span>Sand</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <div class="flex-header">
+                            <h3>My Themes</h3>
+                            <button id="save-theme-btn" class="add-btn">Add New</button>
+                        </div>
+                        <div id="saved-themes-grid" class="presets-grid"></div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-customize">
+                    <div class="section">
+                        <h3>Core Colors</h3>
+                        <div class="color-groups">
+                            <div class="color-group">
+                                <label>Background</label>
+                                <input type="color" id="bg-color" value="#0b0d17">
+                            </div>
+                            <div class="color-group">
+                                <label>Main Accent</label>
+                                <input type="color" id="accent-color" value="#55eefd">
+                            </div>
+                            <div class="color-group">
+                                <label>Secondary</label>
+                                <input type="color" id="secondary-color" value="#00b0ff">
+                            </div>
+                            <div class="color-group">
+                                <label>Syntax</label>
+                                <input type="color" id="purple-color" value="#d57bff">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section">
+                        <div class="advanced-toggle">
+                            <h3>Advanced</h3>
+                            <button id="advanced-toggle-btn" class="add-btn">Show</button>
+                        </div>
+                        <div id="advanced-settings" class="color-groups hidden">
+                            <div class="color-group">
+                                <label>Line Numbers</label>
+                                <input type="color" id="linenumber-color" value="#3D5AFE">
+                            </div>
+                            <div class="color-group">
+                                <label>Gutter BG</label>
+                                <input type="color" id="gutter-color" value="#0b0d17">
+                            </div>
+                            <div class="color-group">
+                                <label>Selection</label>
+                                <input type="color" id="selection-color" value="#311b92">
+                            </div>
+                            <div class="color-group">
+                                <label>BG Opacity</label>
+                                <div class="slider-wrapper">
+                                    <input type="range" id="opacity-slider" min="0" max="255" value="255">
+                                    <span id="opacity-val">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="tab-export">
+                    <div class="section export-section">
+                        <p>Ready to go? Apply your theme directly to VS Code or export it for sharing.</p>
+                        <button id="apply-btn" class="glow-on-hover">Apply to VS Code</button>
+                        <button id="export-btn" class="secondary-btn">Download JSON</button>
+                        <button id="reset-btn" class="outline-btn">Reset Defaults</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="preview-pnl">
+                <div class="vscode-mock">
+                    <div class="title-bar" id="preview-titlebar">
+                        <div class="dots">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                        </div>
+                        <div class="title">theme-preview.ts</div>
+                    </div>
+                    <div class="editor-area">
+                        <div class="sidebar" id="preview-sidebar">
+                            <div class="files">
+                                <div class="file active">theme-preview.ts</div>
+                                <div class="file">extension.ts</div>
+                            </div>
+                        </div>
+                        <div class="editor" id="preview-editor">
+                            <div class="line-numbers">
+                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                            </div>
+                            <div class="code">
+                                <span class="keyword">import</span> { <span class="function">Theme</span> } <span class="keyword">from</span> <span class="string">'vscode'</span>;
+                                <br>
+                                <span class="keyword">export const</span> <span class="function">myTheme</span> = {
+                                <br>
+                                &nbsp;&nbsp;name: <span class="string">'CyanoBact'</span>,
+                                <br>
+                                &nbsp;&nbsp;type: <span class="string">'Dynamic'</span>
+                                <br>
+                                };
+                            </div>
+                        </div>
+                    </div>
+                    <div class="status-bar" id="preview-statusbar">
+                        <span class="status-item">Master*</span>
+                        <span class="status-item">UTF-8</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="${scriptUri}"></script>
+</body>
+</html>

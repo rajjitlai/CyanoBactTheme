@@ -1,6 +1,6 @@
-# README
-
-## Welcome to the README for "Cyan Bact Theme" Extension
+# CyanoBact Theme
+ 
+Official Website: [cyanobact.rjsblog.in](https://cyanobact.rjsblog.in/)
 
 Thank you for choosing our "Cyan Bact Theme" extension for your Visual Studio Code editor. This theme is designed to bring a refreshing and stylish cyan-themed experience to your coding environment. Here's everything you need to know to make the most out of this extension:
 
@@ -10,14 +10,20 @@ Thank you for choosing our "Cyan Bact Theme" extension for your Visual Studio Co
 ![Cyan Bact Theme](./images/preview.png)
 
 ### Features
-
-- **Cyan-inspired**: Immerse yourself in a calming and energizing cyan color palette that makes coding a pleasure.
-
-- **Readable Syntax Highlighting**: We've carefully selected syntax highlighting colors that ensure your code is not only beautiful but also easily readable.
-
-- **Italics for Emphasis**: Certain keywords are displayed in italics to make them stand out and catch your attention effortlessly.
-
-- **Terminal Elegance**: Enjoy a terminal with a semi-transparent black background, providing a blend of style and legibility.
+ 
+-   **Interactive Theme Workshop**: Fully customize your own Cyano-themed variations using a professional, built-in dashboard.
+-   **Dynamic Presets**: Switch between curated styles like Cyano, Emerald, Sunset, Nordic, and Light modes instantly.
+-   **Advanced Options**: Granular control over Gutter, Selection, and Line Number colors.
+-   **Transparency Engine**: Add professional alpha-channel effects to your workbench and editor backgrounds.
+-   **My Themes Gallery**: Save and manage your custom creations locally without losing your work.
+-   **One-Click Export**: Download any design as a standard VS Code JSON theme file.
+ 
+### Using the Theme Builder
+ 
+1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
+2. Search for **CyanoBact: Open Theme Builder**.
+3. Use the tabs (*Styles*, *Customize*, *Export*) to craft your perfect theme.
+4. Click **Apply Changes** to instantly see your design in VS Code!
 
 ### Installation
 

@@ -2,7 +2,7 @@
   "name": "cyano-bact",
   "displayName": "CyanoBact",
   "description": "Cyano Bact Theme",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "publisher": "rjins",
   "author": "Rajjit Laishram",
   "icon": "icons/icon.png",
@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/rajjitlai/CyanoBactTheme"
   },
+  "homepage": "https://cyanobact.rjsblog.in/",
+  "main": "./out/extension.js",
+  "activationEvents": [],
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -23,11 +26,36 @@
         "uiTheme": "vs-dark",
         "path": "./themes/Cyano Bact Theme-color-theme.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "cyanobact.openThemeBuilder",
+        "title": "Open Theme Builder",
+        "category": "CyanoBact"
+      }
     ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.81.0",
+    "@types/node": "16.x",
+    "typescript": "^5.2.2",
+    "eslint": "^8.48.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.5.0"
   },
   "keywords": [
     "theme",
     "themes",
-    "dark theme"
+    "dark theme",
+    "dynamic",
+    "customizable"
   ]
 }
