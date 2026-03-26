@@ -11,19 +11,20 @@ Thank you for choosing our "Cyan Bact Theme" extension for your Visual Studio Co
 
 ### Features
  
--   **Interactive Theme Workshop**: Fully customize your own Cyano-themed variations using a professional, built-in dashboard.
--   **Dynamic Presets**: Switch between curated styles like Cyano, Emerald, Sunset, Nordic, and Light modes instantly.
--   **Advanced Options**: Granular control over Gutter, Selection, and Line Number colors.
--   **Transparency Engine**: Add professional alpha-channel effects to your workbench and editor backgrounds.
--   **My Themes Gallery**: Save and manage your custom creations locally without losing your work.
--   **One-Click Export**: Download any design as a standard VS Code JSON theme file.
+-   **Premium Theme Builder**: A 3-column glassmorphism workshop to design your VS Code theme visually.
+-   **Contextual Tooltips**: Every color picker has a `?` icon explaining exactly what area of VS Code it controls.
+-   **Dynamic Presets**: Switch between Cyano, Emerald, Sunset, Nordic, Sand, and Light modes instantly.
+-   **Full Customization**: Control Core Colors, Editor & Syntax highlighting, Workbench UI, Git decorations, and Terminal colors.
+-   **Transparency Engine**: Alpha-channel opacity slider for professional workbench glass effects.
+-   **My Themes Gallery**: Save and reload your custom designs locally without losing your work.
+-   **One-Click Export**: Download your design as a standard VS Code JSON theme file.
  
 ### Using the Theme Builder
  
 1. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`).
 2. Search for **CyanoBact: Open Theme Builder**.
-3. Use the tabs (*Styles*, *Customize*, *Export*) to craft your perfect theme.
-4. Click **Apply Changes** to instantly see your design in VS Code!
+3. Use the left navigation to switch between **Presets**, **Core Colors**, **Editor & Syntax**, **Workbench**, **Git & UI**, **Terminal**, and **Export**.
+4. Tweak your colors, then go to **Export** and click **Apply to VS Code** to instantly apply your design!
 
 ### Installation
 

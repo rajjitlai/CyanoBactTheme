@@ -2,15 +2,29 @@
 
 All notable changes to the "cyano-bact" extension will be documented in this file.
  
+## [3.1.0] - The Pro Update
+ 
+- **Premium UI Redesign**: Completely rebuilt Theme Builder with a 3-column layout (Navigation, Settings, Live Preview).
+- **Glassmorphism Design**: Frosted-glass panels, deep space background, and neon accent glow.
+- **Interactive Tooltips**: Every color setting now has a contextual `?` hover tooltip explaining exactly what it controls.
+- **Tabbed Navigation**: Dedicated tabs for Presets, Core Colors, Editor & Syntax, Workbench, Git & UI, Terminal, and Export.
+- **Dynamic Theme Init**: Builder auto-loads current theme colors from `themes/*.json` on startup.
+- **Responsive Layout**: Vertical stacking at small widths; sticky live preview panel on wide layouts.
+- **Apply to VS Code**: One-click applies all customizations and activates CyanoBact as the active theme.
+- **Save & Load Presets**: Persist custom themes to localStorage and reload them anytime.
+- **Export JSON**: Download your design as a standard VS Code color theme file.
+ 
 ## [3.0.0] - The Dynamic Update!
  
 - **Interactive Theme Builder**: A professional, tabbed workshop to customize your VS Code theme in real-time.
-- **Dynamic Presets**: Switched between curated styles like Cyano, Emerald, Sunset, Nordic, and Light modes.
+- **Live Mode (Real-time Preview)**: Instantly apply changes to your actual workbench and editors as you customize.
+- **Terminal Workshop**: Deeply customize terminal backgrounds, cursors, and ANSI colors.
+- **Dynamic Presets**: Switch between curated styles like Cyano, Emerald, Sunset, Nordic, and Light modes.
 - **Advanced Customization**: Granular control over Gutter, Selection, and Line Number colors.
 - **Transparency Feature**: Added an opacity slider for professional alpha-channel workbench effects.
+- **Responsive Overhaul**: The builder now works perfectly in small windows or split views.
 - **Theme Library**: Save, load, and manage your custom creations locally.
 - **One-Click Export**: Export your designs as standard VS Code JSON theme files.
-- **Premium UI Overhaul**: Modern glassmorphism-inspired dashboard for a superior builder experience.
 
 ## [2.2.0]
 

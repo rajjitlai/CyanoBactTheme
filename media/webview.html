@@ -7,164 +7,290 @@
     <link rel="stylesheet" href="${styleUri}">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>CyanoBact <span>Builder</span></h1>
-        </header>
+    <div class="app-container">
+        <!-- Column 1: Navigation -->
+        <aside class="side-nav">
+            <div class="brand">CyanoBact</div>
+            <nav class="tabs">
+                <button class="tab-btn active" data-tab="presets">Presets</button>
+                <button class="tab-btn" data-tab="core">Core Colors</button>
+                <button class="tab-btn" data-tab="syntax">Editor & Syntax</button>
+                <button class="tab-btn" data-tab="workbench">Workbench</button>
+                <button class="tab-btn" data-tab="git">Git & UI</button>
+                <button class="tab-btn" data-tab="terminal">Terminal</button>
+                <button class="tab-btn" data-tab="export">Export</button>
+            </nav>
 
-        <main>
-            <section class="sidebar-pnl card">
-                <nav class="tabs">
-                    <button class="tab-btn active" data-tab="styles">Styles</button>
-                    <button class="tab-btn" data-tab="customize">Customize</button>
-                    <button class="tab-btn" data-tab="export">Export</button>
-                </nav>
+            <div class="nav-footer">
+                <a href="https://cyanobact.rjsblog.in/" class="site-link">cyanobact.rjsblog.in</a>
+            </div>
+        </aside>
 
-                <div class="sidebar-footer">
-                    <a href="https://cyanobact.rjsblog.in/" class="site-link">Website</a>
+        <!-- Column 2: Settings Panels -->
+        <main class="settings-panel">
+            
+            <!-- Tab: Presets -->
+            <div class="tab-content active" id="tab-presets">
+                <div class="section-header">
+                    <h2>Theme Presets</h2>
+                    <p>Start with a professionally crafted base theme.</p>
+                </div>
+                <div class="presets-grid">
+                    <button class="preset-card" data-preset="cyano">
+                        <div class="card-preview" style="background: #0b0d17;"><span style="background: #55eefd;"></span></div>
+                        <span>Cyano Prime</span>
+                    </button>
+                    <button class="preset-card" data-preset="emerald">
+                        <div class="card-preview" style="background: #061109;"><span style="background: #2ecc71;"></span></div>
+                        <span>Emerald Deep</span>
+                    </button>
+                    <button class="preset-card" data-preset="sunset">
+                        <div class="card-preview" style="background: #1a0b17;"><span style="background: #ff00ff;"></span></div>
+                        <span>Neon Sunset</span>
+                    </button>
+                    <button class="preset-card" data-preset="nordic">
+                        <div class="card-preview" style="background: #1b2b34;"><span style="background: #88c0d0;"></span></div>
+                        <span>Nordic Ice</span>
+                    </button>
+                    <button class="preset-card" data-preset="light-cyan">
+                        <div class="card-preview" style="background: #f0faff;"><span style="background: #008cff;"></span></div>
+                        <span>Light Mode</span>
+                    </button>
+                    <button class="preset-card" data-preset="sand">
+                        <div class="card-preview" style="background: #faf7f2;"><span style="background: #9b6d43;"></span></div>
+                        <span>Soft Sand</span>
+                    </button>
                 </div>
 
-                <div class="tab-content active" id="tab-styles">
-                    <div class="section">
-                        <h3>Presets</h3>
-                        <div class="presets-grid">
-                            <button class="preset-card" data-preset="cyano" title="Cyano Prime">
-                                <div class="card-preview" style="background: #0b0d17;"><span style="background: #55eefd;"></span></div>
-                                <span>Cyano</span>
-                            </button>
-                            <button class="preset-card" data-preset="emerald" title="Emerald Deep">
-                                <div class="card-preview" style="background: #061109;"><span style="background: #2ecc71;"></span></div>
-                                <span>Emerald</span>
-                            </button>
-                            <button class="preset-card" data-preset="sunset" title="Neon Sunset">
-                                <div class="card-preview" style="background: #1a0b17;"><span style="background: #ff00ff;"></span></div>
-                                <span>Sunset</span>
-                            </button>
-                            <button class="preset-card" data-preset="nordic" title="Nordic Ice">
-                                <div class="card-preview" style="background: #1b2b34;"><span style="background: #88c0d0;"></span></div>
-                                <span>Nordic</span>
-                            </button>
-                            <button class="preset-card" data-preset="light-cyan" title="Light Cyan">
-                                <div class="card-preview" style="background: #f0faff;"><span style="background: #008cff;"></span></div>
-                                <span>Light</span>
-                            </button>
-                            <button class="preset-card" data-preset="sand" title="Soft Sand">
-                                <div class="card-preview" style="background: #faf7f2;"><span style="background: #9b6d43;"></span></div>
-                                <span>Sand</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="flex-header">
-                            <h3>My Themes</h3>
-                            <button id="save-theme-btn" class="add-btn">Add New</button>
-                        </div>
-                        <div id="saved-themes-grid" class="presets-grid"></div>
-                    </div>
+                <div class="section-header" style="margin-top: 2rem;">
+                    <h2>My Saved Themes</h2>
+                    <button id="save-theme-btn" class="action-btn small">Save Current</button>
                 </div>
+                <div id="saved-themes-grid" class="presets-grid"></div>
+            </div>
 
-                <div class="tab-content" id="tab-customize">
-                    <div class="section">
-                        <h3>Core Colors</h3>
-                        <div class="color-groups">
-                            <div class="color-group">
-                                <label>Background</label>
-                                <input type="color" id="bg-color" value="#0b0d17">
-                            </div>
-                            <div class="color-group">
-                                <label>Main Accent</label>
-                                <input type="color" id="accent-color" value="#55eefd">
-                            </div>
-                            <div class="color-group">
-                                <label>Secondary</label>
-                                <input type="color" id="secondary-color" value="#00b0ff">
-                            </div>
-                            <div class="color-group">
-                                <label>Syntax</label>
-                                <input type="color" id="purple-color" value="#d57bff">
-                            </div>
-                        </div>
+            <!-- Tab: Core Colors -->
+            <div class="tab-content" id="tab-core">
+                <div class="section-header">
+                    <h2>Core Colors</h2>
+                    <p>The foundational colors of your VS Code workspace.</p>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Background <span class="tooltip-icon" data-tooltip="Main background color for the editor, sidebar, and panels.">?</span></label>
+                        <input type="color" id="bg-color" value="#0b0d17">
                     </div>
-                    
-                    <div class="section">
-                        <div class="advanced-toggle">
-                            <h3>Advanced</h3>
-                            <button id="advanced-toggle-btn" class="add-btn">Show</button>
-                        </div>
-                        <div id="advanced-settings" class="color-groups hidden">
-                            <div class="color-group">
-                                <label>Line Numbers</label>
-                                <input type="color" id="linenumber-color" value="#3D5AFE">
-                            </div>
-                            <div class="color-group">
-                                <label>Gutter BG</label>
-                                <input type="color" id="gutter-color" value="#0b0d17">
-                            </div>
-                            <div class="color-group">
-                                <label>Selection</label>
-                                <input type="color" id="selection-color" value="#311b92">
-                            </div>
-                            <div class="color-group">
-                                <label>BG Opacity</label>
-                                <div class="slider-wrapper">
-                                    <input type="range" id="opacity-slider" min="0" max="255" value="255">
-                                    <span id="opacity-val">100%</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="color-group">
+                        <label>Main Accent <span class="tooltip-icon" data-tooltip="Primary highlight color used for active tabs, badges, and focus borders.">?</span></label>
+                        <input type="color" id="accent-color" value="#55eefd">
+                    </div>
+                    <div class="color-group">
+                        <label>Secondary <span class="tooltip-icon" data-tooltip="Used for function names and secondary UI highlights.">?</span></label>
+                        <input type="color" id="secondary-color" value="#00b0ff">
+                    </div>
+                    <div class="color-group">
+                        <label>Selection <span class="tooltip-icon" data-tooltip="Background color of selected text in the editor.">?</span></label>
+                        <input type="color" id="selection-color" value="#311b92">
                     </div>
                 </div>
 
-                <div class="tab-content" id="tab-export">
-                    <div class="section export-section">
-                        <p>Ready to go? Apply your theme directly to VS Code or export it for sharing.</p>
-                        <button id="apply-btn" class="glow-on-hover">Apply to VS Code</button>
-                        <button id="export-btn" class="secondary-btn">Download JSON</button>
-                        <button id="reset-btn" class="outline-btn">Reset Defaults</button>
+                <div class="section-header" style="margin-top: 2rem;">
+                    <h2>Transparency</h2>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group full-width">
+                        <label>Background Opacity <span class="tooltip-icon" data-tooltip="Adjusts the alpha channel of the main background for glass effects (if supported by OS).">?</span></label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="opacity-slider" min="0" max="255" value="255">
+                            <span id="opacity-val">100%</span>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="preview-pnl">
-                <div class="vscode-mock">
-                    <div class="title-bar" id="preview-titlebar">
-                        <div class="dots">
-                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-                        </div>
-                        <div class="title">theme-preview.ts</div>
+            <!-- Tab: Editor & Syntax -->
+            <div class="tab-content" id="tab-syntax">
+                <div class="section-header">
+                    <h2>Syntax Highlighting</h2>
+                    <p>Colors for specific elements of your code.</p>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Keywords <span class="tooltip-icon" data-tooltip="Color for language keywords (import, export, const, if, etc).">?</span></label>
+                        <input type="color" id="purple-color" value="#d57bff">
                     </div>
-                    <div class="editor-area">
-                        <div class="sidebar" id="preview-sidebar">
-                            <div class="files">
-                                <div class="file active">theme-preview.ts</div>
-                                <div class="file">extension.ts</div>
-                            </div>
-                        </div>
-                        <div class="editor" id="preview-editor">
-                            <div class="line-numbers">
-                                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
-                            </div>
-                            <div class="code">
-                                <span class="keyword">import</span> { <span class="function">Theme</span> } <span class="keyword">from</span> <span class="string">'vscode'</span>;
-                                <br>
-                                <span class="keyword">export const</span> <span class="function">myTheme</span> = {
-                                <br>
-                                &nbsp;&nbsp;name: <span class="string">'CyanoBact'</span>,
-                                <br>
-                                &nbsp;&nbsp;type: <span class="string">'Dynamic'</span>
-                                <br>
-                                };
-                            </div>
-                        </div>
+                    <div class="color-group">
+                        <label>Strings <span class="tooltip-icon" data-tooltip="Color for string literals ('hello world').">?</span></label>
+                        <input type="color" id="string-color" value="#76c1ff">
                     </div>
-                    <div class="status-bar" id="preview-statusbar">
-                        <span class="status-item">Master*</span>
-                        <span class="status-item">UTF-8</span>
+                    <div class="color-group">
+                        <label>Comments <span class="tooltip-icon" data-tooltip="Color for code comments (// info).">?</span></label>
+                        <input type="color" id="comment-color" value="#6196f7">
+                    </div>
+                    <div class="color-group">
+                        <label>Numbers <span class="tooltip-icon" data-tooltip="Color for numeric values (100, 3.14).">?</span></label>
+                        <input type="color" id="number-color" value="#fffc58">
                     </div>
                 </div>
-            </section>
+
+                <div class="section-header" style="margin-top: 2rem;">
+                    <h2>Editor Settings</h2>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Line Numbers <span class="tooltip-icon" data-tooltip="Color of the line numbers in the editor margin.">?</span></label>
+                        <input type="color" id="linenumber-color" value="#3D5AFE">
+                    </div>
+                    <div class="color-group">
+                        <label>Gutter BG <span class="tooltip-icon" data-tooltip="Background color of the margin containing line numbers and breakpoints.">?</span></label>
+                        <input type="color" id="gutter-color" value="#0b0d17">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Workbench -->
+            <div class="tab-content" id="tab-workbench">
+                <div class="section-header">
+                    <h2>Workbench Layout</h2>
+                    <p>Customize the outer shell of VS Code.</p>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Activity Badge <span class="tooltip-icon" data-tooltip="Background color of notification badges on the activity bar.">?</span></label>
+                        <input type="color" id="badge-bg-color" value="#55eefd">
+                    </div>
+                    <div class="color-group">
+                        <label>SideBar Border <span class="tooltip-icon" data-tooltip="Border color separating the sidebar from the main editor area.">?</span></label>
+                        <input type="color" id="sidebar-border-color" value="#09040f">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Git & UI -->
+            <div class="tab-content" id="tab-git">
+                <div class="section-header">
+                    <h2>UI Components</h2>
+                    <p>Buttons, inputs, and notifications.</p>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Button BG <span class="tooltip-icon" data-tooltip="Background color for primary buttons across VS Code. Text color auto-adjusts.">?</span></label>
+                        <input type="color" id="button-bg-color" value="#00aeff">
+                    </div>
+                    <div class="color-group">
+                        <label>Input BG <span class="tooltip-icon" data-tooltip="Background color for text input fields (search, command palette).">?</span></label>
+                        <input type="color" id="input-bg-color" value="#0b0d17">
+                    </div>
+                    <div class="color-group">
+                        <label>Notification BG <span class="tooltip-icon" data-tooltip="Background color for toast notifications that appear in the bottom right.">?</span></label>
+                        <input type="color" id="notif-bg-color" value="#0b0d17">
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 2rem;">
+                    <h2>Git Decorations</h2>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Modified <span class="tooltip-icon" data-tooltip="Color used in Explorer/SCM to indicate a file has been modified.">?</span></label>
+                        <input type="color" id="git-mod-color" value="#00c3ff">
+                    </div>
+                    <div class="color-group">
+                        <label>Deleted <span class="tooltip-icon" data-tooltip="Color used to indicate a file has been deleted.">?</span></label>
+                        <input type="color" id="git-del-color" value="#ff004c">
+                    </div>
+                    <div class="color-group">
+                        <label>Untracked <span class="tooltip-icon" data-tooltip="Color used to indicate a newly created file not yet tracked by Git.">?</span></label>
+                        <input type="color" id="git-new-color" value="#55eefd">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Terminal -->
+            <div class="tab-content" id="tab-terminal">
+                <div class="section-header">
+                    <h2>Terminal Studio</h2>
+                    <p>Customize your integrated command line.</p>
+                </div>
+                <div class="color-groups">
+                    <div class="color-group">
+                        <label>Background <span class="tooltip-icon" data-tooltip="Specific background color for the integrated terminal.">?</span></label>
+                        <input type="color" id="terminal-bg-color" value="#0b0d17">
+                    </div>
+                    <div class="color-group">
+                        <label>Foreground <span class="tooltip-icon" data-tooltip="Default text color in the terminal.">?</span></label>
+                        <input type="color" id="terminal-fg-color" value="#ffffff">
+                    </div>
+                    <div class="color-group">
+                        <label>Cursor <span class="tooltip-icon" data-tooltip="Color of the blinking block/line cursor in the terminal.">?</span></label>
+                        <input type="color" id="terminal-cursor-color" value="#55eefd">
+                    </div>
+                    <div class="color-group">
+                        <label>ANSI Cyan <span class="tooltip-icon" data-tooltip="Color used when scripts output standard Cyan.">?</span></label>
+                        <input type="color" id="ansi-cyan-color" value="#55eefd">
+                    </div>
+                    <div class="color-group">
+                        <label>ANSI Green <span class="tooltip-icon" data-tooltip="Color used when scripts output standard Green.">?</span></label>
+                        <input type="color" id="ansi-green-color" value="#2ecc71">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Export -->
+            <div class="tab-content" id="tab-export">
+                <div class="section-header">
+                    <h2>Apply & Export</h2>
+                    <p>Ready to go? Apply your theme directly to VS Code or export it as JSON.</p>
+                </div>
+                <div class="export-actions">
+                    <button id="apply-btn" class="action-btn glow">Apply to VS Code</button>
+                    <button id="export-btn" class="action-btn outline">Download JSON file</button>
+                    <button id="reset-btn" class="action-btn danger">Reset Defaults</button>
+                </div>
+            </div>
+            
         </main>
+
+        <!-- Column 3: Sticky Preview -->
+        <aside class="preview-panel">
+            <div class="vscode-mock glass-panel">
+                <div class="title-bar" id="preview-titlebar">
+                    <div class="dots">
+                        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    </div>
+                    <div class="title">Preview</div>
+                </div>
+                <div class="editor-area">
+                    <div class="sidebar" id="preview-sidebar">
+                        <div class="files">
+                            <div class="file active">preview.ts</div>
+                            <div class="file">extension.ts</div>
+                            <div class="file">style.css</div>
+                        </div>
+                    </div>
+                    <div class="editor" id="preview-editor">
+                        <div class="line-numbers">
+                            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+                        </div>
+                        <div class="code">
+                            <span class="comment">// Define a custom theme</span><br>
+                            <span class="keyword">import</span> { <span class="mock-type">Theme</span> } <span class="keyword">from</span> <span class="string">'vscode'</span>;<br>
+                            <br>
+                            <span class="keyword">export const</span> <span class="function">myTheme</span> = {<br>
+                            &nbsp;&nbsp;name: <span class="string">'CyanoBact Pro'</span>,<br>
+                            &nbsp;&nbsp;version: <span class="number">3.1</span>,<br>
+                            &nbsp;&nbsp;type: <span class="string">'Dynamic'</span><br>
+                            };
+                        </div>
+                    </div>
+                </div>
+                <div class="status-bar" id="preview-statusbar">
+                    <span class="status-item">master*</span>
+                    <span class="status-item">UTF-8</span>
+                    <span class="status-item">TypeScript React</span>
+                </div>
+            </div>
+        </aside>
     </div>
     <script src="${scriptUri}"></script>
 </body>
